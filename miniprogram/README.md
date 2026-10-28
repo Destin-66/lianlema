@@ -58,7 +58,7 @@ node --test "test/*.test.js"   # 仓库根执行，50 条
 
 ## 六、可选增强（沿用基座能力）
 
-- **语音命令与播报**：同声传译插件（`wx069ba97219f66d99`），在 `app.json` 加 `plugins` 字段后生效；缺失自动隐藏。启用步骤与微信大赛版相同。
+- **语音命令与播报**：微信「同声传译」插件，在 `app.json` 加 `plugins` 字段后生效；缺失自动隐藏。启用步骤见 `providers/voice/voiceProvider.js` 头部注释。
 - **云开发多设备同步**：`config.js` 填 `CLOUD_ENV_ID`，创建 `assessments/plans/entitlements/consents/sessions` 集合；未配置自动降级本地。
 - **商业化接入（预留）**：本版本不设付费墙；厂商/平台可基于 backend 的 API-key 与用量计量（`/api/usage`）在生态侧接入计费售卖，作品侧零改动。
 

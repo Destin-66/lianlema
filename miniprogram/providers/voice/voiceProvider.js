@@ -4,9 +4,10 @@
  * - TTS 失败 → 返回 { audioUrl:null, ttsFailed:true }，调用方降级为文本（Property 9）。
  *
  * 启用步骤（企业/个人主体均可）：
- * 1. mp.weixin.qq.com → 设置 → 第三方设置 → 插件管理 → 添加"同声传译"（wx069ba97219f66d99）。
- * 2. 在 app.json 根级加入：
- *    "plugins": { "WechatSI": { "version": "0.3.5", "provider": "wx069ba97219f66d99" } }
+ * 1. mp.weixin.qq.com → 设置 → 第三方设置 → 插件管理 → 添加「同声传译」插件
+ *    （插件 AppID 以微信公众平台插件管理页显示为准，亦见微信官方插件文档）。
+ * 2. 在 app.json 根级加入（provider 填上一步的插件 AppID）：
+ *    "plugins": { "WechatSI": { "version": "0.3.5", "provider": "<同声传译插件 AppID>" } }
  * 3. 重新编译即可。
  */
 
